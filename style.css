@@ -11,4 +11,48 @@
   --gray: #5c6a79;
   --purple: #4c3db2;
 }
+.navbar{
+  height: 120px;
+  width: 80%;
+  margin: 0px auto;
+  
+}
+.menu,.menu-icons{
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 0px;
+    flex-direction: row;
+    font-size: 20px;
+    color: var(--gray);
+    cursor: pointer;
+}
+.menu li,.menu-icons li{
+margin: 0px 10px 0px 0px;
+}
+.active{
+    color: var(--black);
+    font-weight: bold;
+}
+.menu-icons li{
+    color: var(--black);
+}
+.basket-icon{
+    position: relative;
+}
+.basket-count{
+    width: 20px;
+    height: 20px;
+    background-color: var(--black);
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    right: -0.7rem;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 5px; */
+    font-size: 1rem;
+    font-weight: bold;
+}
 

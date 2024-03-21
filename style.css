@@ -104,6 +104,15 @@ transition: all 250ms ease-in-out;
     background-color: var(--purple);
     color: white;
 }
+.filter-background{
+    width: 600px;
+    height: 900px;
+    position: absolute;
+    background-color: #efeef6;
+    left: 0;
+    top: 100;
+    z-index: -1;
+}
 .filter{
     width: 600px;
     height: 900px;
@@ -112,4 +121,34 @@ transition: all 250ms ease-in-out;
     left: 0;
     top: 100;
     z-index: -1;
+}
+.filter li{
+    color: var(gray);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+
+}
+.filter li:hover{
+    color:var(--purple) ;
+}
+
+.filter li.active2{
+    color: var(--purple);
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+.filter li.active2::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--purple);
+    
+     display: inline-block;
+position: absolute;
+    
+     left: -5px;
+     margin-top: 12px;
 }

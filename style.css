@@ -114,13 +114,12 @@ transition: all 250ms ease-in-out;
     z-index: -1;
 }
 .filter{
-    width: 600px;
-    height: 900px;
+    list-style: none;
+    display: flex;
+    min-height: 650px;
+    flex-direction: column;
+    justify-content: center;
     position: absolute;
-    background-color: #efeef6;
-    left: 0;
-    top: 100;
-    z-index: -1;
 }
 .filter li{
     color: var(gray);
@@ -145,10 +144,8 @@ transition: all 250ms ease-in-out;
     height: 10px;
     border-radius: 50%;
     background-color: var(--purple);
-    
-     display: inline-block;
-position: absolute;
-    
-     left: -5px;
-     margin-top: 12px;
+    display: inline-block;
+    position: absolute;   
+    left: -5px;
+    margin-top: 12px;
 }

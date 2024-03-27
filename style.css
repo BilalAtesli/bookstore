@@ -149,3 +149,88 @@ transition: all 250ms ease-in-out;
     left: -5px;
     margin-top: 12px;
 }
+
+.basket-modal{
+    background-color: #5c6a7950;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 5;
+
+}
+.basket-items{
+    width: 450px;
+    background-color: white;
+    height: 100%;
+    float: right;
+    position: relative;
+}
+.basket-items .bi-x{
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 3rem;
+    color: var(--black);
+    cursor: pointer;
+}
+.basket-title{
+    color: var(--black
+    );
+    margin-top: 5rem;
+    text-align: center;
+    font-weight: bold;
+}
+.basket-list{
+    list-style-type: none;
+    padding: 0 10px;
+    margin-top: 2.5rem;
+    max-height: 650px;
+    overflow-y: auto;
+ 
+}
+.basket-item{
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    margin-bottom: 2rem;
+    
+}
+.basket-item-info{
+    width: 250px;
+}
+.basket-item-info .book-name{
+    font-size: 16px;
+    font-weight: bold;
+}
+.basket-item-info .book-price{
+    font-size: 16px;
+    
+}
+.basket-item-info .book-remove{
+   cursor: pointer;
+   color: var(--gray);
+    
+}
+.basket-item .book-count{
+    font-size: 1.5;
+    color: var(--black);
+    font-weight: bold;
+
+}
+.book-count .decrease,.increase{
+    color: var(--purple);
+    cursor: pointer;
+}
+.basket-total{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 5%;
+  align-items: center;
+  width: inherit;
+}
+.basket-total button{
+    width: 250px;
+}
